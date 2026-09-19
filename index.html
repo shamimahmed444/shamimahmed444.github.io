@@ -301,6 +301,9 @@
   .quote-card p b{color:var(--pink);}
   .quote-card .who{color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase;}
 
+  /* extra spacing between About Me and Skills */
+  #about{margin-bottom:42px;}
+
   /* skills */
   .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
   @media(min-width:640px){.skills-grid{grid-template-columns:repeat(4,1fr);}}
@@ -334,6 +337,11 @@
 
   .hero-role{font-family:'Sora',system-ui,sans-serif;font-size:18px;font-weight:600;margin:14px 0 0;color:var(--violet);letter-spacing:.02em;}
   .skill-tile .lb{font-size:13.5px;font-weight:600;}
+
+
+  /* extra spacing between Skills, Projects, and Experience */
+  #skills{margin-bottom:42px;}
+  #projects{margin-bottom:42px;}
 
   /* projects */
   .proj-grid{display:grid;grid-template-columns:1fr;gap:18px;}
@@ -808,17 +816,16 @@
 <header class="hero wrap">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow">Data · Curiosity · Impact</div>
       <h1>Shamim <span class="gradient-text">Ahmed</span></h1>
       <p class="hero-role">Data Scientist &amp; Analyst</p>
-      <div class="hero-chips" aria-label="Core stack">
+      
+      <p class="sub">I turn raw, messy data into clear insights, predictive models, and decision-ready dashboards using Python, SQL, Power BI, Tableau, and machine learning.</p><div class="hero-chips" aria-label="Core stack">
+
          <span><img src="data:image/svg+xml,&lt;svg%20xmlns=&quot;http://www.w3.org/2000/svg&quot;%20viewBox=&quot;0%200%20448%20512&quot;&gt;&lt;path%20fill=&quot;%233776AB&quot;%20d=&quot;M184%20256c0%2017%2014%2031%2031%2031h49c31%200%2056-25%2056-56V80c0-29-24-50-53-55-35-6-73-6-104%200-45%208-53%2025-53%2056v41h106v14H70c-31%200-58%2019-67%2054-10%2041-10%2066%200%20109%208%2032%2026%2054%2057%2054h48v-49c0-35%2031-66%2067-66h107c30%200%2053-24%2053-54V148h-40v47c0%2037-31%2068-67%2068H184zm-7-151c-11%200-20-9-20-20s9-20%2020-20%2020%209%2020%2020-9%2020-20%2020zm119%20300c11%200%2020%209%2020%2020s-9%2020-20%2020-20-9-20-20%209-20%2020-20z&quot;/&gt;&lt;path%20fill=&quot;%23FFD343&quot;%20d=&quot;M214%20248h50c30%200%2054-24%2054-54V92c0-31-25-54-54-54h-52c-30%200-54%2023-54%2054v41h107v14H158c-31%200-54%2031-54%2066v101c0%2031%2024%2054%2054%2054h53v-48c0-29%2024-54%2053-54h-50c-31%200-54-25-54-54%200-12%205-23%2013-31%208-8%2019-13%2031-13z&quot;/&gt;&lt;/svg&gt;" alt="Python programming language official logo">Python</span>
          <span><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='16' rx='22' ry='9' fill='%234479A1'/%3E%3Cpath d='M10 16v32c0 5 10 9 22 9s22-4 22-9V16' fill='%234479A1'/%3E%3Cellipse cx='32' cy='16' rx='22' ry='9' fill='%235C9ACB'/%3E%3Cpath d='M18 29c4 3 9 4 14 4s10-1 14-4M18 41c4 3 9 4 14 4s10-1 14-4' fill='none' stroke='%23D9F1FF' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" alt="SQL logo">SQL</span>
          <span><img src="data:image/svg+xml,&lt;svg%20xmlns=&quot;http://www.w3.org/2000/svg&quot;%20viewBox=&quot;0%200%2064%2064&quot;&gt;&lt;path%20fill=&quot;%23F2C811&quot;%20d=&quot;M8%2050V28c0-2.2%201.8-4%204-4h6c2.2%200%204%201.8%204%204v22H8zm17%200V16c0-2.2%201.8-4%204-4h6c2.2%200%204%201.8%204%204v34H25zm17%200V8c0-2.2%201.8-4%204-4h6c2.2%200%204%201.8%204%204v42H42z&quot;/&gt;&lt;path%20fill=&quot;%23F2C811&quot;%20d=&quot;M10%2054h44c2.2%200%204%201.8%204%204H6c0-2.2%201.8-4%204-4z&quot;/&gt;&lt;/svg&gt;" alt="Microsoft Power BI logo">Power BI</span>
          <span><img src="data:image/svg+xml,&lt;svg%20xmlns=&quot;http://www.w3.org/2000/svg&quot;%20viewBox=&quot;0%200%2064%2064&quot;&gt;&lt;g%20transform=&quot;translate(32%2032)%20rotate(45)%20translate(-32%20-32)&quot;&gt;&lt;rect%20x=&quot;10&quot;%20y=&quot;27&quot;%20width=&quot;44&quot;%20height=&quot;10&quot;%20rx=&quot;2&quot;%20fill=&quot;%235B8FF9&quot;/&gt;&lt;rect%20x=&quot;27&quot;%20y=&quot;10&quot;%20width=&quot;10&quot;%20height=&quot;44&quot;%20rx=&quot;2&quot;%20fill=&quot;%23E97627&quot;/&gt;&lt;rect%20x=&quot;20&quot;%20y=&quot;20&quot;%20width=&quot;24&quot;%20height=&quot;24&quot;%20rx=&quot;2&quot;%20fill=&quot;%235B5BD6&quot;%20opacity=&quot;.9&quot;/&gt;&lt;rect%20x=&quot;27&quot;%20y=&quot;27&quot;%20width=&quot;10&quot;%20height=&quot;10&quot;%20fill=&quot;%2327A6A6&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;" alt="Tableau logo">Tableau</span>
-         <span><img src="data:image/svg+xml,&lt;svg%20xmlns=&quot;http://www.w3.org/2000/svg&quot;%20viewBox=&quot;0%200%2064%2064&quot;&gt;&lt;path%20fill=&quot;%23F7931E&quot;%20d=&quot;M9%2044c0-15%2011-27%2026-27%208%200%2015%203%2020%208l-7%207c-3-3-7-5-13-5-9%200-16%207-16%2017h-10z&quot;/&gt;&lt;path%20fill=&quot;%233499CD&quot;%20d=&quot;M55%2020c0%2015-11%2027-26%2027-8%200-15-3-20-8l7-7c3%203%207%205%2013%205%209%200%2016-7%2016-17h10z&quot;/&gt;&lt;circle%20cx=&quot;23&quot;%20cy=&quot;29&quot;%20r=&quot;4&quot;%20fill=&quot;%23F7931E&quot;/&gt;&lt;circle%20cx=&quot;41&quot;%20cy=&quot;35&quot;%20r=&quot;4&quot;%20fill=&quot;%233499CD&quot;/&gt;&lt;/svg&gt;" alt="scikit-learn machine learning logo">Machine Learning</span>
-       </div>
-      <p class="sub">I turn raw, messy data into clear insights, predictive models, and decision-ready dashboards using Python, SQL, Power BI, Tableau, and machine learning.</p>
+         <span><img src="data:image/svg+xml,&lt;svg%20xmlns=&quot;http://www.w3.org/2000/svg&quot;%20viewBox=&quot;0%200%2064%2064&quot;&gt;&lt;path%20fill=&quot;%23F7931E&quot;%20d=&quot;M9%2044c0-15%2011-27%2026-27%208%200%2015%203%2020%208l-7%207c-3-3-7-5-13-5-9%200-16%207-16%2017h-10z&quot;/&gt;&lt;path%20fill=&quot;%233499CD&quot;%20d=&quot;M55%2020c0%2015-11%2027-26%2027-8%200-15-3-20-8l7-7c3%203%207%205%2013%205%209%200%2016-7%2016-17h10z&quot;/&gt;&lt;circle%20cx=&quot;23&quot;%20cy=&quot;29&quot;%20r=&quot;4&quot;%20fill=&quot;%23F7931E&quot;/&gt;&lt;circle%20cx=&quot;41&quot;%20cy=&quot;35&quot;%20r=&quot;4&quot;%20fill=&quot;%233499CD&quot;/&gt;&lt;/svg&gt;" alt="scikit-learn machine learning logo">Machine Learning</span>        </div>
             <div class="loc">📍 <span id="typedLoc"></span><span class="cursor"></span></div>
       <div class="actions">
         <a class="btn primary magnetic" href="#projects">View My Work →</a>
@@ -881,7 +888,7 @@
   <div class="skills-grid" style="margin-top:28px;">
     <div class="skill-tile tilt"><div class="ic"><svg class="skill-svg-logo" role="img" aria-label="Python official logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#3776AB" d="M184 256c0 17 14 31 31 31h49c31 0 56-25 56-56V80c0-29-24-50-53-55-35-6-73-6-104 0-45 8-53 25-53 56v41h106v14H70c-31 0-58 19-67 54-10 41-10 66 0 109 8 32 26 54 57 54h48v-49c0-35 31-66 67-66h107c30 0 53-24 53-54V148h-40v47c0 37-31 68-67 68H184zm-7-151c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20zm119 300c11 0 20 9 20 20s-9 20-20 20-20-9-20-20 9-20 20-20z"/><path fill="#FFD343" d="M214 248h50c30 0 54-24 54-54V92c0-31-25-54-54-54h-52c-30 0-54 23-54 54v41h107v14H158c-31 0-54 31-54 66v101c0 31 24 54 54 54h53v-48c0-29 24-54 53-54h-50c-31 0-54-25-54-54 0-12 5-23 13-31 8-8 19-13 31-13z"/></svg></div><div class="lb">Python</div></div>
     <div class="skill-tile tilt"><div class="ic"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='16' rx='22' ry='9' fill='%234479A1'/%3E%3Cpath d='M10 16v32c0 5 10 9 22 9s22-4 22-9V16' fill='%234479A1'/%3E%3Cellipse cx='32' cy='16' rx='22' ry='9' fill='%235C9ACB'/%3E%3Cpath d='M18 29c4 3 9 4 14 4s10-1 14-4M18 41c4 3 9 4 14 4s10-1 14-4' fill='none' stroke='%23D9F1FF' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" alt="SQL logo"></div><div class="lb">SQL</div></div>
-    <div class="skill-tile tilt"><div class="ic"><img src="data:image/svg+xml,&lt;svg%20xmlns=&quot;http://www.w3.org/2000/svg&quot;%20viewBox=&quot;0%200%2064%2064&quot;&gt;&lt;path%20fill=&quot;%23F2C811&quot;%20d=&quot;M8%2050V28c0-2.2%201.8-4%204-4h6c2.2%200%204%201.8%2020%204v22H8zm17%200V16c0-2.2%201.8-4%204-4h6c2.2%200%204%201.8%204%204v34H25zm17%200V8c0-2.2%201.8-4%204-4h6c2.2%200%204%201.8%204%204v42H42z&quot;/&gt;&lt;path%20fill=&quot;%23F2C811&quot;%20d=&quot;M10%2054h44c2.2%200%204%201.8%204%204H6c0-2.2%201.8-4%204-4z&quot;/&gt;&lt;/svg&gt;" alt="Microsoft Power BI official logo"></div><div class="lb">Power BI</div></div>
+    <div class="skill-tile tilt"><div class="ic"><img src="https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/SVG/Power-BI.svg" alt="Microsoft Power BI official logo"></div><div class="lb">Power BI</div></div>
     <div class="skill-tile tilt"><div class="ic"><svg class="skill-svg-logo" role="img" aria-label="Tableau official logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g transform="translate(32 32) rotate(45) translate(-32 -32)"><rect x="9" y="27" width="46" height="10" rx="2" fill="#5B8FF9"/><rect x="27" y="9" width="10" height="46" rx="2" fill="#E97627"/><rect x="20" y="20" width="24" height="24" rx="3" fill="#5B5BD6"/><rect x="27" y="27" width="10" height="10" fill="#27A6A6"/></g></svg></div><div class="lb">Tableau</div></div>
     <div class="skill-tile tilt"><div class="ic">📊</div><div class="lb">Statistical Analysis</div></div>
     <div class="skill-tile tilt"><div class="ic">📈</div><div class="lb">Business Intelligence Tools</div></div>
@@ -1049,7 +1056,7 @@
   }
 
   // typing effect for location: types "Bengaluru, India" then deletes, loops
-  const target = "Bengaluru, India";
+  const target = "Based in Bengaluru, India";
   const el = document.getElementById('typedLoc');
   let i = 0, deleting = false;
   function tick(){
@@ -1160,9 +1167,7 @@
     img.addEventListener('error',()=>{
       const alt=(img.alt||'').toLowerCase();
       const wrap=img.parentElement;
-      if(alt.includes('power bi')){
-        wrap.innerHTML='<span class="brand-fallback powerbi-fallback" aria-label="Power BI logo"><i></i><i></i><i></i></span>';
-      }else if(alt.includes('tableau')){
+      if(alt.includes('tableau')){
         wrap.innerHTML='<span class="brand-fallback tableau-fallback" aria-label="Tableau logo"><i></i><i></i><i></i><i></i></span>';
       }
     },{once:true});
