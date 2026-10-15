@@ -1107,6 +1107,18 @@
     height:42px!important;
     object-fit:contain;
   }
+
+  /* Match the new dashboard project buttons to the full-width project action style */
+  .proj-card:has(img[alt="Superstore Sales Analysis dashboard"]) .btn,
+  .proj-card:has(img[alt="E-Commerce Sales Analysis dashboard"]) .btn{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    text-align:center;
+  }
+
+  /* Center project action labels and keep buttons full-width */
+  .proj-card > a.btn{width:100%;justify-content:center;text-align:center;}
 </style>
 </head>
 <body id="top">
